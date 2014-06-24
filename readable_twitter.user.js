@@ -18,6 +18,8 @@
         ".twitter-atreply > s {display: none}",
         ".twitter-hashtag > b {color: #8899a6}",
         ".twitter-hashtag > s {display: none}",
+        ".expand-stream-item {color: #8899a6}",
+        ".details > .Icon:before {color: #8899a6}",
 
         //put main content on left of the dashboard
         ".dashboard {float: right}",
