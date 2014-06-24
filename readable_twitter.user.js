@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           Readable Twitter
-// @version        1.0
+// @version        1.1
 // @author         rajbot
 // @namespace      http://bitstream.io
 // @description    Make twitter timelines more readable by muting bright colors and moving the content to the left.
