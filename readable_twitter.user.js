@@ -19,6 +19,10 @@
         ".twitter-hashtag > b {color: #8899a6}",
         ".twitter-hashtag > s {display: none}",
 
+        //nav bar
+        ".Icon--bird:before {color: #66757f}",
+        ".tweet-btn, .tweet-btn:focus {background: none repeat scroll 0 0 rgba(102, 117, 127, 0.8)}",
+
         //mute the blue around the "Compose new Tweet" / "Reply to" box
         ".home-tweet-box, .dm-tweetbox, .WebToast-box--altColor, .content-main .conversations-enabled .expansion-container .inline-reply-tweetbox {background-color: #eeeeee}",
         ".u-bgUserColorLightest {background-color: #eeeeee !important}",
