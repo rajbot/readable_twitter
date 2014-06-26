@@ -1,44 +1,16 @@
 // ==UserScript==
 // @name           Readable Twitter
-// @version        1.1
+// @version        1.2
 // @author         rajbot
-// @namespace      http://bitstream.io
 // @description    Make twitter timelines more readable by muting bright colors and moving the content to the left.
+// @grant          GM_addStyle
 // @include        http://twitter.com/*
 // @include        https://twitter.com/*
-// @grant          GM_addStyle
 // ==/UserScript==
 
+// This script was generated programatically by chromeext_to_greasemonkey.py
+
 (function() {
-    var css = [
-        "body {background-image: none !important}",
-        "body {background-color: #ffffff !important}",
-        ".twitter-timeline-link {color: #8899a6}",
-        ".twitter-atreply > b {color: #8899a6}",
-        ".twitter-atreply > s {display: none}",
-        ".twitter-hashtag > b {color: #8899a6}",
-        ".twitter-hashtag > s {display: none}",
+    GM_addStyle('body{background-image:none!important;background-color:#fff!important}.twitter-timeline-link{color:#8899a6!important}.twitter-atreply>b{color:#8899a6!important}.twitter-atreply>s{display:none!important}.twitter-hashtag>b{color:#8899a6!important}.twitter-hashtag>s{display:none!important}.expand-stream-item{color:#8899a6}.details>.Icon:before{color:#8899a6}.Icon--bird:before{display:none!important}.tweet-btn,.tweet-btn:focus{background:none repeat scroll 0 0 rgba(102,117,127,0.8)!important}#global-new-tweet-button.tweet-btn,#global-new-tweet-button.tweet-btn:focus{background:none repeat scroll 0 0 rgba(102,117,127,0.8)!important}.home-tweet-box,.dm-tweetbox,.WebToast-box--altColor,.content-main .conversations-enabled .expansion-container .inline-reply-tweetbox{background-color:#eee!important}.u-bgUserColorLightest{background-color:#eee!important}.u-bgUserColorLightest.home-tweet-box{background-color:#eee!important}.wtf-module{display:none!important}.trends{display:none!important}.dashboard{float:right!important}.content-main{float:left!important}');
 
-        //handle expand + view media links
-        ".expand-stream-item {color: #8899a6}",
-        ".details > .Icon:before {color: #8899a6}",
-
-        //nav bar
-        //".Icon--bird:before {color: #66757f}",
-        ".Icon--bird:before {display: none}",
-        ".tweet-btn, .tweet-btn:focus {background: none repeat scroll 0 0 rgba(102, 117, 127, 0.8)}",
-
-        //mute the blue around the "Compose new Tweet" / "Reply to" box
-        ".home-tweet-box, .dm-tweetbox, .WebToast-box--altColor, .content-main .conversations-enabled .expansion-container .inline-reply-tweetbox {background-color: #eeeeee}",
-        ".u-bgUserColorLightest {background-color: #eeeeee !important}",
-
-        //hide the useless who-to-follow and trends boxes
-        ".wtf-module {display:none !important}",
-        ".trends {display:none !important}",
-
-        //put main content on left of the dashboard
-        ".dashboard {float: right}",
-        ".content-main {float: left}",
-    ].join("");
-    GM_addStyle(css);
 })();
