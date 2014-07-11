@@ -2,8 +2,8 @@
     "manifest_version": 2,
 
     "name": "Readable Twitter",
-    "description": "Make twitter timelines more readable by muting bright colors and moving the content to the left.",
-    "version": "1.3",
+    "description": "Make twitter timelines more readable by adding a button to hide retweets, muting bright colors, and moving the content to the left.",
+    "version": "1.4",
     "content_scripts": [
         {
             "matches": ["http://twitter.com/*", "https://twitter.com/*"],

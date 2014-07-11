@@ -4,11 +4,11 @@ body {
 }
 
 .twitter-timeline-link {
-    color: #8899a6 !important;
+    color: #66757f !important;
 }
 
 .twitter-atreply > b {
-    color: #8899a6 !important;
+    color: #66757f !important;
 }
 
 .twitter-atreply > s {
@@ -16,7 +16,7 @@ body {
 }
 
 .twitter-hashtag > b {
-    color: #8899a6 !important;
+    color: #66757f !important;
 }
 
 .twitter-hashtag > s {
