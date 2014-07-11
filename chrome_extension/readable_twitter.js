@@ -3,7 +3,10 @@
 var retweets_visible = true;
 
 function hide_retweets() {
-    $('.js-retweet-text').parent().parent().parent().filter(':visible').hide();
+    var retweets = $('.js-retweet-text').parent().parent().parent().filter(':visible');
+    retweets.hide();
+    retweets.parents('.expanded-conversation').hide();
+    console.log('foo');
     retweets_visible = false;
 }
 
@@ -32,7 +35,9 @@ $(hide_rt_div).click(function() {
         //observer.observe(page_container, observer_config);
     } else {
         //observer.disconnect();
-        $('.js-retweet-text').parent().parent().parent().show();
+        var retweets = $('.js-retweet-text').parent().parent().parent();
+        retweets.show();
+        retweets.parents('.expanded-conversation').show();
         $('#hidert_button_txt').text('hide');
         retweets_visible = true;
 
