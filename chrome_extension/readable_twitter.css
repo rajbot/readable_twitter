@@ -73,6 +73,11 @@ body {
     display:none !important;
 }
 
+/* hide monsanto ads */
+.promoted-tweet {
+    display: none;
+}
+
 /* put main content on left of the dashboard */
 .dashboard {
     float: right !important;
